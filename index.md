@@ -1,4 +1,4 @@
-# Optimal Character Recognition
+# Optical Character Recognition
 Using a Raspberry Pi to identify text in both images and in real life.
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
