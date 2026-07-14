@@ -57,7 +57,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 My starter project is the Weevil Eye, a weevil-shaped desk toy that when put in the dark or without any light source causes the LEDs on the front of the weevil to light up.
 
-(wait for video)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s9vzrnBnQ8c?si=JG5GBp8a0fwG4wzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Next, I will start on my main project, which is optical character recognition; I will start by analyzing Tesseract and other related public OCR models before building my own.
 
