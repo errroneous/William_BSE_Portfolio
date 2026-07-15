@@ -47,20 +47,14 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+My project(Optical Character Recognition) is to use a model to detect and identify text from various passages of both online and handwritten text. My model will be split into 3 parts: Finding the text and/or characters in a document, then identifying what they are, forming up the model; then I will connect this trained model to the real world to dynamically detect images in real time. This first milestone is the first component of my model, where I will train a model to identify characters in a text document.
+
 For your first milestone, describe what your project is and how you plan to build it. You can include:
 - An explanation about the different components of your project and how they will all integrate together
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
-
-# Starter Project
-
-My starter project is the Weevil Eye, a weevil-shaped desk toy that when put in the dark or without any light source causes the LEDs on the front of the weevil to light up.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s9vzrnBnQ8c?si=JG5GBp8a0fwG4wzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Next, I will start on my main project, which is optical character recognition; I will start by analyzing Tesseract and other related public OCR models before building my own.
-
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
