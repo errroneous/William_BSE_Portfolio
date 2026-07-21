@@ -28,43 +28,31 @@ Something's fishy...
 
 # Second Milestone
 
-```
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
-```
-Something's fishy...
+My second milestone is to train a model to identify individual characters of text. For this I decided at first on a linear model, but then I switched to a 2-layer CNN to learn features. This final model(trained on 15 iterations of the Extended MNIST balanced dataset) achieved 87% accuracy on the testset.
+
+The big issue with this model is that there are a few very similar characters, which account for almost 10% of the dataset, those being 1, l, I and 0/O. To tell the difference between these I would need more complicated models(and more training time).
 
 # First Milestone
 
-```
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-My project(Optical Character Recognition) is to use a model to detect and identify text from various passages of both online and handwritten text. My model will be split into 3 parts: Finding the text and/or characters in a document, then identifying what they are, forming up the model; then I will connect this trained model to the real world to dynamically detect images in real time. This first milestone is the first component of my model, where I will train a model to identify characters in a text document.
+My project is to self-build a basic OCR system from scratch, and connect it to a Raspberry Pi camera to be able to extract text from the environment. This can be split into 3 parts: using a camera to take a picture of a page, identifying where text is on said page and recognizing individual characters of text for output.
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
-```
-Something's fishy...
+My first milestone is to write an algorithm to detect where text is in a file. For this, after binarizing the image via a filter, I used a kernel to iterate over subsets of pixels and then applied a threshold to identify groups of text. The main challenge with this algorithm is that due to uneven text spacing, it is not possible to identify all text equally well, as it could bunch text up on accident.
+
+The next milestone is to train a model to identify individual characters of English text, uppercase and lowercase.
 
 # Schematics 
 
 ![CNN Schematic](network-2.png)
 
+Text detection Schematic: TO BE ADDED
+
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 Colab for CNN: https://colab.research.google.com/drive/1JPxSS0inNdVZi3DgPQ9Ln58SS83VIB4u
 
