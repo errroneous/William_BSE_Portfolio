@@ -74,19 +74,38 @@ Here's where you'll put your code. The syntax below places it into a block of co
 
 Colab for CNN: https://colab.research.google.com/drive/1JPxSS0inNdVZi3DgPQ9Ln58SS83VIB4u
 
+Identifying where text is:
+
 ```python3
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+# bounding box sum of values
+# take any connected section with high enough score
+# remove lines
+# continuously rotate image until you get a vertical enough line and split
+# pass those as matrices to trained model
 
-void loop() {
-  // put your main code here, to run repeatedly:
+import cv2
+from PIL import Image
+import numpy as np
+import scipy
+import matplotlib.pyplot as plt
 
-}
+with Image.open("/Users/williammao/Desktop/screenshot5.png") as im:
+    im_cpy = np.array(im.convert("L"))
+    im_cpy = (im_cpy < 200)
+    filter_s = 25
+    sk = np.array(np.lib.stride_tricks.sliding_window_view(im_cpy, (15, 15)))
+    sk = (np.sum(np.sum(sk, axis = 2), axis = 2) > 50)
+    lbl, _ = scipy.ndimage.label(sk, structure = [[1, 1, 1], [1, 1, 1], [1, 1, 1]])
+    slices = scipy.ndimage.find_objects(lbl)
+    for idx, slc in enumerate(slices, start=1):
+        if slc != None:
+            cropped_component = im_cpy[slc]
+            plt.imshow(cropped_component)
+            plt.show()
 ```
 
+Camera capturing:
+(TO BE ADDED)
 # Parts Used
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
