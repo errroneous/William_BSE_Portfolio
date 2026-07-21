@@ -81,7 +81,23 @@ with Image.open("/Users/williammao/Desktop/screenshot5.png") as im:
 ```
 
 Camera capturing:
-(TO BE ADDED)
+
+```python3
+from picamera2 import Picamera2, Preview
+from pynput import mouse, keyboard
+
+cam = Picamera2()
+cnfg = cam.create_preview_configuration()
+cam.configure(cnfg)
+cam.start_preview(Preview.QTGL)
+cam.start()
+with keyboard.Events() as events:
+    for event in events:
+        if event.key == keyboard.Key.enter:
+            break
+cam.capture_file("test.jpg")
+cam.stop_preview()
+```
 # Parts Used
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
