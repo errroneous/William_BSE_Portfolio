@@ -12,19 +12,11 @@ OCR is prevalent whenever scan a file, translate documents or extract text from 
   
 # Final Milestone
 
-```HTML
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-```
-Something's fishy...
+My final milestone is to link up both my model and my text detection algorithm to a camera to identify text form the enrivornment. This was built using Raspberry Pi's picamera2 module, allowing me to use the given Raspberry Pi camera to take images. The biggest issue with this milestone was all of the libraries that had to be imported-some libraries took up way too much space, and due to how Linux works, you cannot even install most python libraries without first creating a virtual environment.
 
+(2nd part is TO BE COMPLETED)
 
 # Second Milestone
 
@@ -33,6 +25,8 @@ Something's fishy...
 My second milestone is to train a model to identify individual characters of text. For this I decided at first on a linear model, but then I switched to a 2-layer CNN to learn features. This final model(trained on 15 iterations of the Extended MNIST balanced dataset) achieved 87% accuracy on the testset.
 
 The big issue with this model is that there are a few very similar characters, which account for almost 10% of the dataset, those being 1, l, I and 0/O. To tell the difference between these I would need more complicated models(and more training time).
+
+My final milestone will be to connect this model sequence to a Raspberry Pi to be able to capture images from the environment.
 
 # First Milestone
 
