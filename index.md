@@ -72,6 +72,8 @@ Something's fishy...
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
+Colab for CNN: https://colab.research.google.com/drive/1JPxSS0inNdVZi3DgPQ9Ln58SS83VIB4u
+
 ```python3
 void setup() {
   // put your setup code here, to run once:
