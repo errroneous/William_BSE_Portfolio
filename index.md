@@ -12,7 +12,7 @@ OCR is prevalent whenever scan a file, translate documents or extract text from 
   
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zD_gSm0l_ls?si=4D8yFeMzz-VK62Y3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 My final milestone is to link up both my model and my text detection algorithm to a camera to identify text form the enrivornment. This was built using Raspberry Pi's picamera2 module, allowing me to use the given Raspberry Pi camera to take images. The biggest issue with this milestone was all of the libraries that had to be imported-some libraries took up way too much space, and due to how Linux works, you cannot even install most python libraries without first creating a virtual environment.
 
@@ -20,7 +20,7 @@ My final milestone is to link up both my model and my text detection algorithm t
 
 # Second Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aNhNrOw-PBY?si=VwLUmwP46oCStIqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 My second milestone is to train a model to identify individual characters of text. For this I decided at first on a linear model, but then I switched to a 2-layer CNN to learn features. This final model(trained on 15 iterations of the Extended MNIST balanced dataset) achieved 87% accuracy on the testset.
 
@@ -31,7 +31,7 @@ My final milestone will be to connect this model sequence to a Raspberry Pi to b
 # First Milestone
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6XHCfbCdElQ?si=llJrcRIMrLr4BYJH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 My project is to self-build a basic OCR system from scratch, and connect it to a Raspberry Pi camera to be able to extract text from the environment. This can be split into 3 parts: using a camera to take a picture of a page, identifying where text is on said page and recognizing individual characters of text for output.
