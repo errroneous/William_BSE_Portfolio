@@ -109,12 +109,16 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 Note on the keyboard/mouse: Once a VNC is set up, there is no more need for a keyboard/mouse, but due to higher resolution of the monitor ist is still recommended.
 
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
-
+# Other Resources
+Non-standard libraries used:
+- picamera2 - Connecting to Raspberry Pi camera.
+- pynput - Allows input buffering through keyboard for Raspberry Pi
+- Pillow(Image & ImageOps) - Used to grayscale/binarize the image for processing.
+- numpy - A versatile multipurpose tool that massively speeds up code execution and other things.
+- scipy - Useful algorithms for machine learning.
+- matplotlib.pyplot - Showing images and plots. A good alternative is seaborn.
+- torch and torchvision - The main machine learning library used.
+Standard libraries used:
+- time - Allows waiting for time. Is a standard library.
+---
 Something's fishy...
