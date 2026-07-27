@@ -1,6 +1,6 @@
 # Optical Character Recognition
 
-OCR is prevalent whenever scan a file, translate documents or extract text from a screenshot. But how does it work? This project combines feature detection along with a CNN to create a basic OCR system capable of detecting text.
+OCR is prevalent whenever scan a file, translate documents or extract text from a screenshot. But how does it work? This project combines feature detection along with a CNN to create a basic OCR system capable of detecting text from an image.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
