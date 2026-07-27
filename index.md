@@ -6,8 +6,6 @@ OCR is prevalent whenever scan a file, translate documents or extract text from 
 |:--:|:--:|:--:|:--:|
 | William M. | Basis Independent Silicon Valley | CS/AI | Incoming Sophmore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
 ![Headstone Image](IMG_9969.HEIC)
   
 # Final Milestone
@@ -65,19 +63,26 @@ import numpy as np
 import scipy
 import matplotlib.pyplot as plt
 
-with Image.open("/Users/williammao/Desktop/screenshot5.png") as im:
+with Image.open("FILE_NAME") as im:
     im_cpy = np.array(im.convert("L"))
-    im_cpy = (im_cpy < 200)
+    im_cpy = (im_cpy < 140)
+    tmp = Image.fromarray(im_cpy.astype(np.uint8) * 255, mode = "L")
+    tmp.show()
     filter_s = 25
-    sk = np.array(np.lib.stride_tricks.sliding_window_view(im_cpy, (15, 15)))
-    sk = (np.sum(np.sum(sk, axis = 2), axis = 2) > 50)
+    sk = np.array(np.lib.stride_tricks.sliding_window_view(im_cpy, (45, 15)))
+    sk = (np.sum(np.sum(sk, axis = 2), axis = 2) > 100)
     lbl, _ = scipy.ndimage.label(sk, structure = [[1, 1, 1], [1, 1, 1], [1, 1, 1]])
     slices = scipy.ndimage.find_objects(lbl)
+    ct = 0
     for idx, slc in enumerate(slices, start=1):
-        if slc != None:
-            cropped_component = im_cpy[slc]
-            plt.imshow(cropped_component)
-            plt.show()
+        if slc != None and ct != 2:
+            cropped_component = im_cpy[slc].astype(np.uint8) * 255
+            sh = cropped_component.shape
+            img2 = Image.fromarray(cropped_component, mode = "L")
+            time.sleep(1)
+            img2 = ImageOps.expand(img2, border = np.max(sh) // 5, fill = 0)
+            img2 = img2.resize((28, 28))
+            img2.show()
 ```
 
 Camera capturing:
