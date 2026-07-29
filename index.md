@@ -14,7 +14,7 @@ OCR is prevalent whenever scan a file, translate documents or extract text from 
 
 My final milestone is to link up both my model and my text detection algorithm to a camera to identify text form the enrivornment. This was built using Raspberry Pi's picamera2 module, allowing me to use the given Raspberry Pi camera to take images. The biggest issue with this milestone was all of the libraries that had to be imported-some libraries took up way too much space, and due to how Linux works, you cannot even install most python libraries without first creating a virtual environment.
 
-(2nd part is TO BE COMPLETED)
+In the future, I hope to be able to improve the reliability of my model and my camera, allowing me to have a more sustainable pipeline and thus a higher quality output. I also wish to incorporate different features, such as accounting for rotation, warping, and partial obfuscation.
 
 # Second Milestone
 
@@ -41,8 +41,6 @@ The next milestone is to train a model to identify individual characters of Engl
 # Schematics 
 
 ![CNN Schematic](network-2.png)
-
-Text detection Schematic: TO BE ADDED
 
 # Code
 
@@ -115,7 +113,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 Note on the keyboard/mouse: Once a VNC is set up, there is no more need for a keyboard/mouse, but due to higher resolution of the monitor ist is still recommended.
 
 # Other Resources
-Non-standard libraries used:
+Libraries used:
 - picamera2 - Connecting to Raspberry Pi camera.
 - pynput - Allows input buffering through keyboard for Raspberry Pi
 - Pillow(Image & ImageOps) - Used to grayscale/binarize the image for processing.
@@ -123,7 +121,7 @@ Non-standard libraries used:
 - scipy - Useful algorithms for machine learning.
 - matplotlib.pyplot - Showing images and plots. A good alternative is seaborn.
 - torch and torchvision - The main machine learning library used.
-Standard libraries used:
 - time - Allows waiting for time. Is a standard library.
----
+
+
 Something's fishy...
