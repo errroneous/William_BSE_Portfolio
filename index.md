@@ -45,6 +45,7 @@ The next milestone is to train a model to identify individual characters of Engl
 # Code
 
 Colab for CNN: https://colab.research.google.com/drive/1JPxSS0inNdVZi3DgPQ9Ln58SS83VIB4u
+Use weights found in "weights.txt".
 
 Identifying where text is:
 
