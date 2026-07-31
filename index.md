@@ -103,9 +103,6 @@ cam.capture_file("test.jpg")
 cam.stop_preview()
 ```
 # Parts Used
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
-
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | CanaKit Raspberry Pi 4 Starter Kit(32 GB EVO+, Premium Black Case)/4 GB Ram | Raspberry Pi | $119.00 | <a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html?srsltid=AfmBOoqactFRiLuNfSdSD2wUCHARI6ijl9eRnVXGIvdhOYxsMbABwKK7"> Link </a> |
